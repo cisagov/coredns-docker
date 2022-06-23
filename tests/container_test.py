@@ -12,7 +12,7 @@ ENV_VAR = "ECHO_MESSAGE"
 ENV_VAR_VAL = "Docker compose is up and running!"
 READY_MESSAGE = "Debug message"
 SECRET_QUOTE = (
-    "There are no secrets better kept than the secrets everybody guesses."
+    "This is a placeholder value"
 )
 RELEASE_TAG = os.getenv("RELEASE_TAG")
 VERSION_FILE = "src/version.txt"
