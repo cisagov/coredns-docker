@@ -24,5 +24,3 @@ services:
 #    secrets:
 #      - source: quote_txt
 #        target: quote.txt
-
-
