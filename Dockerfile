@@ -1,6 +1,6 @@
 ARG VERSION=unspecified
 
-FROM coredns/coredns:latest
+FROM xvxd4sh/coredns:latest
 
 ARG VERSION
 
