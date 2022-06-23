@@ -21,10 +21,10 @@ appropriate for Docker containers and the major languages that we use.
 
 ### Running with Docker ###
 
-To run the `cisagov/example` image via Docker:
+To run the `xvxd4sh/coredns` image via Docker:
 
 ```console
-docker run cisagov/example:0.0.1
+docker run xvxd4sh/coredns
 ```
 
 ### Running with Docker Compose ###
