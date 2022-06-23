@@ -3,10 +3,12 @@
 
 # Standard Python Libraries
 import os
-#import time
 
 # Third-Party Libraries
 import pytest
+
+# import time
+
 
 ENV_VAR = "ECHO_MESSAGE"
 ENV_VAR_VAL = "Docker compose is up and running!"
@@ -23,8 +25,8 @@ def test_container_count(dockerc):
     ), "Wrong number of containers were started."
 
 
-#TODO: Implement this test.
-#def test_wait_for_ready(main_container):
+# TODO: Implement this test.
+# def test_wait_for_ready(main_container):
 #    """Wait for container to be ready."""
 #    TIMEOUT = 10
 #    for i in range(TIMEOUT):
@@ -37,6 +39,7 @@ def test_container_count(dockerc):
 #            f'Expected "{READY_MESSAGE}" in the log within {TIMEOUT} seconds.'
 #        )
 
+
 def test_wait_for_exits(main_container, version_container):
     """Wait for containers to exit."""
     assert main_container.wait() == 0, "Container service (main) did not exit cleanly"
@@ -44,13 +47,15 @@ def test_wait_for_exits(main_container, version_container):
         version_container.wait() == 0
     ), "Container service (version) did not exit cleanly"
 
-#TODO: Implement this test.
-#def test_output(main_container):
+
+# TODO: Implement this test.
+# def test_output(main_container):
 #    """Verify the container had the correct output."""
 #    main_container.wait()  # make sure container exited if running test isolated
 #    log_output = main_container.logs().decode("utf-8")
 #    assert SECRET_QUOTE in log_output, "Secret not found in log output."
 #
+
 
 @pytest.mark.skipif(
     RELEASE_TAG in [None, ""], reason="this is not a release (RELEASE_TAG not set)"
