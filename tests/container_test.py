@@ -3,7 +3,7 @@
 
 # Standard Python Libraries
 import os
-import time
+#import time
 
 # Third-Party Libraries
 import pytest
@@ -27,7 +27,7 @@ def test_container_count(dockerc):
 
 
 #TODO: Implement this test.
-'''
+"""
 def test_wait_for_ready(main_container):
     """Wait for container to be ready."""
     TIMEOUT = 10
@@ -40,7 +40,7 @@ def test_wait_for_ready(main_container):
             f"Container does not seem ready.  "
             f'Expected "{READY_MESSAGE}" in the log within {TIMEOUT} seconds.'
         )
-'''
+"""
 
 def test_wait_for_exits(main_container, version_container):
     """Wait for containers to exit."""
@@ -50,13 +50,14 @@ def test_wait_for_exits(main_container, version_container):
     ), "Container service (version) did not exit cleanly"
 
 #TODO: Implement this test.
-'''
+
+"""
 def test_output(main_container):
     """Verify the container had the correct output."""
     main_container.wait()  # make sure container exited if running test isolated
     log_output = main_container.logs().decode("utf-8")
     assert SECRET_QUOTE in log_output, "Secret not found in log output."
-'''
+"""
 
 @pytest.mark.skipif(
     RELEASE_TAG in [None, ""], reason="this is not a release (RELEASE_TAG not set)"
