@@ -19,7 +19,7 @@ This is a docker project that is used to spin up a CoreDNS server.
 To run the `xvxd4sh/coredns` image via Docker:
 
 ```console
-docker run xvxd4sh/coredns
+docker run xvxd4sh/coredns:latest
 ```
 
 ### Running with Docker Compose ###
@@ -205,7 +205,7 @@ docker build \
   https://github.com/cisagov/example.git#develop
 ``` -->
 
-<!-- ## Cross-platform builds ##
+## Cross-platform builds ##
 
 To create images that are compatible with other platforms, you can use the
 [`buildx`](https://docs.docker.com/buildx/working-with-buildx/) feature of
@@ -215,8 +215,8 @@ Docker:
    or the command line:
 
     ```console
-    git clone https://github.com/cisagov/example.git
-    cd example
+    git clone https://github.com/xvxd4sh/megazord-http-redirector-docker.git
+    cd megazord-http-redirector-docker
     ```
 
 1. Create the `Dockerfile-x` file with `buildx` platform support:
@@ -233,8 +233,8 @@ Docker:
       --platform linux/amd64 \
       --build-arg VERSION=0.0.1 \
       --output type=docker \
-      --tag cisagov/example:0.0.1 .
-    ``` -->
+      --tag xvxd4sh/coredns:latest .
+    ```
 
 <!-- ## New repositories from a skeleton ##
 
