@@ -187,7 +187,7 @@ There are no required environment variables.
 |-------|---------|---------|
 | `ECHO_MESSAGE` | Sets the message echoed by this container.  | `Hello World from Dockerfile` | -->
 
-<!-- 
+<!--
 ## Secrets ##
 
 | Filename     | Purpose |
