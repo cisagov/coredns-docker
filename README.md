@@ -12,6 +12,28 @@
 
 This is a docker project that is used to spin up a CoreDNS server.
 
+## CoreDNS Configuration ##
+
+CoreDNS uses a configuration file
+[Corefile](https://coredns.io/2017/07/23/corefile-explained/) to specify what
+servers listen on which port(s), the protocols used by the server, and for
+which zone the server is authoritative. This file is located at
+```config/Corefile``` and is mounted to ```/root``` when the CoreDNS
+container is ran.
+
+### Corefile ###
+
+A minimal Corefile is included in this repository and can be configured
+following the scheme shown below.
+
+```console
+ZONE:[PORT] {
+  [PLUGIN]...
+}
+```
+
+A list of [plugin(s)](https://coredns.io/plugins/) used by the CoreDNS
+
 ## Running ##
 
 ### Running with Docker ###
@@ -144,7 +166,7 @@ The following ports are exposed by this container:
 
 | Port | Purpose        |
 |------|----------------|
-| 53 | This is listening for DNS queries |
+| 53 | listening for DNS queries |
 
 The sample [Docker composition](docker-compose.yml) publishes the
 exposed port at 53.
@@ -216,13 +238,6 @@ Docker:
       --output type=docker \
       --tag xvxd4sh/coredns:latest .
     ```
-
-<!-- ## New repositories from a skeleton ##
-
-Please see our [Project Setup guide](https://github.com/cisagov/development-guide/tree/develop/project_setup)
-for step-by-step instructions on how to start a new repository from
-a skeleton. This will save you time and effort when configuring a
-new repository! -->
 
 <!-- ## Contributing ##
 
