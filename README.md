@@ -1,14 +1,14 @@
 # megazord-coredns-redirector-docker 💀🐳 #
 
-[![GitHub Build Status](https://github.com/cisagov/megazord-coredns-redirector-docker/workflows/build/badge.svg)](https://github.com/xvxd4sh/megazord-coredns-redirector-docker/actions/workflows/build.yml)
-[![CodeQL](https://github.com/cisagov/megazord-coredns-redirector-docker/workflows/CodeQL/badge.svg)](https://github.com/xvxd4sh/megazord-coredns-redirector-docker/actions/workflows/codeql-analysis.yml)
-[![Known Vulnerabilities](https://snyk.io/test/github/cisagov/megazord-coredns-redirector-docker/badge.svg)](https://snyk.io/test/github/xvxd4sh/megazord-coredns-redirector-docker)
+[![GitHub Build Status](https://github.com/xvxd4sh/coredns-docker/workflows/build/badge.svg)](https://github.com/xvxd4sh/coredns-docker/actions/workflows/build.yml)
+[![CodeQL](https://github.com/xvxd4sh/coredns-docker/workflows/CodeQL/badge.svg)](https://github.com/xvxd4sh/coredns-docker/actions/workflows/codeql-analysis.yml)
+[![Known Vulnerabilities](https://snyk.io/test/github/xvxd4sh/coredns-docker/badge.svg)](https://snyk.io/test/github/xvxd4sh/coredns-docker)
 
 ## Docker Image ##
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/cisagov/example)](https://hub.docker.com/r/xvxd4sh/coredns)
-[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/cisagov/example)](https://hub.docker.com/r/xvxd4sh/coredns)
-[![Platforms](https://img.shields.io/badge/platforms-amd64%20%7C%20arm%2Fv6%20%7C%20arm%2Fv7%20%7C%20arm64%20%7C%20ppc64le%20%7C%20s390x-blue)](https://hub.docker.com/r/xvxd4sh/megazord-coredns-redirector-docker/tags)
+[![Docker Pulls](https://img.shields.io/docker/pulls/xvxd4sh/coredns)](https://hub.docker.com/r/xvxd4sh/coredns)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/xvxd4sh/coredns)](https://hub.docker.com/r/xvxd4sh/coredns)
+[![Platforms](https://img.shields.io/badge/platforms-amd64%20%7C%20arm%2Fv6%20%7C%20arm%2Fv7%20%7C%20arm64%20%7C%20ppc64le%20%7C%20s390x-blue)](https://hub.docker.com/r/xvxd4sh/coredns-docker/tags)
 
 This is a docker project that is used to spin up a CoreDNS server.
 
