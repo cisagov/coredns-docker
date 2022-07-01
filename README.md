@@ -12,22 +12,27 @@
 
 This is a docker project that is used to spin up a CoreDNS server.
 
-## CoreDNS Configuration
+## CoreDNS Configuration ##
 
-CoreDNS uses a configuration file [Corefile](https://coredns.io/2017/07/23/corefile-explained/) to specify what servers listen on which port(s), the protocols used by the server, and for which zone the server is authoritative. This file is located at [/config/Corefile](https://github.com/xvxd4sh/coredns-docker/blob/develop/config/Corefile) and is mounted to /root when the CoreDNS container is loaded.
+CoreDNS uses a configuration file
+[Corefile](https://coredns.io/2017/07/23/corefile-explained/) to specify what
+servers listen on which port(s), the protocols used by the server, and for
+which zone the server is authoritative. This file is located at
+```config/Corefile``` and is mounted to ```/root``` when the CoreDNS
+container is ran.
 
-### Corefile 
+### Corefile ###
 
-A minimal Corefile is included in this repository and can be configured following the scheme shown below.
+A minimal Corefile is included in this repository and can be configured
+following the scheme shown below.
 
-```
+```console
 ZONE:[PORT] {
   [PLUGIN]...
 }
 ```
 
 A list of [plugin(s)](https://coredns.io/plugins/) used by the CoreDNS
-
 
 ## Running ##
 
