@@ -1,4 +1,4 @@
-# Coredns-docker 💀🐳 #
+# Coredns-docker 📔🐳 #
 
 [![GitHub Build Status](https://github.com/xvxd4sh/coredns-docker/workflows/build/badge.svg)](https://github.com/xvxd4sh/coredns-docker/actions/workflows/build.yml)
 [![CodeQL](https://github.com/xvxd4sh/coredns-docker/workflows/CodeQL/badge.svg)](https://github.com/xvxd4sh/coredns-docker/actions/workflows/codeql-analysis.yml)
