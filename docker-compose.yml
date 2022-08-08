@@ -21,6 +21,3 @@ services:
     restart: on-failure
     volumes:
       - './config:/root'
-#    secrets:
-#      - source: quote_txt
-#        target: quote.txt

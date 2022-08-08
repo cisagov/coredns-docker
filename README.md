@@ -52,12 +52,6 @@ docker run xvxd4sh/coredns:latest
     ---
     version: "3.7"
 
-    # This Docker composition file is used to build and test the container
-
-    secrets:
-      quote_txt:
-        file: ./src/secrets/quote.txt
-
     services:
       redirect-dns:
         # Run the container normally
@@ -66,7 +60,7 @@ docker run xvxd4sh/coredns:latest
           # e.g., --build-arg VERSION=0.0.1
           context: .
           dockerfile: Dockerfile
-        image: xvxd4sh/coredns:latest
+        image: xvxd4sh/coredns
         container_name: coredns
         init: true
         restart: on-failure
@@ -207,7 +201,7 @@ docker build \
   --tag cisagov/example:0.0.1 \
   https://github.com/cisagov/example.git#develop
 ``` -->
-
+<!--
 ## Cross-platform builds ##
 
 To create images that are compatible with other platforms, you can use the
@@ -237,12 +231,12 @@ Docker:
       --build-arg VERSION=0.0.1 \
       --output type=docker \
       --tag xvxd4sh/coredns:latest .
-    ```
+    ``` -->
 
-<!-- ## Contributing ##
+## Contributing ##
 
 We welcome contributions!  Please see [`CONTRIBUTING.md`](CONTRIBUTING.md) for
-details. -->
+details.
 
 ## License ##
 
