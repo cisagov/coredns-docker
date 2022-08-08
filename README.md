@@ -201,7 +201,7 @@ docker build \
   --tag cisagov/example:0.0.1 \
   https://github.com/cisagov/example.git#develop
 ``` -->
-<!-- 
+<!--
 ## Cross-platform builds ##
 
 To create images that are compatible with other platforms, you can use the
