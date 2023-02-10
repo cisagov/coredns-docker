@@ -90,5 +90,14 @@ RUN wget --output-document sourcecode.tgz \
 >>>>>>> c43af0bbb959f7f3567d8a37cc3a76d2d246c963
 # Prepare to run
 ###
+<<<<<<< HEAD
 EXPOSE 53/udp
 CMD ["-conf", "/root/Corefile"]
+=======
+ENV ECHO_MESSAGE="Hello World from Dockerfile"
+USER ${CISA_USER}:${CISA_GROUP}
+EXPOSE 8080/TCP
+VOLUME ["/var/log"]
+ENTRYPOINT ["example"]
+CMD ["--log-level", "DEBUG"]
+>>>>>>> 83baee5da2c5dde558cda41a5cccfefec7c2586c
